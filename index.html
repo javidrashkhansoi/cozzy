@@ -562,27 +562,14 @@
     })
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    /** @type {NodeListOf<HTMLElement>} */
-    const buttons = document.querySelectorAll("button", "a");
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        ym(98264475, "reachGoal", "clickButton", {
-          "Проект": "Cozzy",
-          "Секция кнопки": button.closest("section")?.className,
-        });
-      }, { once: true });
+    ym(98264475, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
     });
-
-    // ym(98210139, "init", {
-    //   clickmap: true,
-    //   trackLinks: true,
-    //   accurateTrackBounce: true,
-    //   webvisor: true
-    // });
   </script>
   <noscript>
-    <div><img src="https://mc.yandex.ru/watch/98210139" style="position:absolute; left:-9999px;" alt="" /></div>
+    <div><img src="https://mc.yandex.ru/watch/98264475" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
   <!-- /Yandex.Metrika counter -->
 </body>
