@@ -567,6 +567,16 @@
       trackLinks: true,
       accurateTrackBounce: true
     });
+
+    const problems = document.querySelectorAll(".about_problems-block");
+
+    problems.forEach((problem) => {
+      ym(98264475, "reachGoal", "test", {
+        "Проект": "Cozzy",
+        "Кнопка": problem.querySelector(".about_problems-block-text")?.textContent.replaceAll(/\w/g, " ").trim(),
+      });
+    });
+
   </script>
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/98264475" style="position:absolute; left:-9999px;" alt="" /></div>
